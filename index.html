@@ -73,8 +73,25 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
 .formFooter {display: none;}
-  header, footer, .social-album {
+
+@media only screen and (max-width: 640px) {
+  .iframe-container  {
+    width: 65% !important;
+}
+  .bloc-gauche {
+    width: 100%;
+}
+  .logo {
+    display: none;
+}
+  .containeur-logo-mobile {
+    display: block;
+}
+}
+
+header, footer, .social-album {
     display: none;
   }
   
@@ -91,6 +108,18 @@
   width: 40rem;
   top: -6rem;
   left: -6rem;
+}
+.containeur-logo-mobile {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  margin-top: 2rem;
+  display: none;
+}
+.logo-mobile {
+  display: inline-block;
+  opacity: 0.33;
+  width: 11rem;
 }
 main {
   position: relative;
@@ -398,17 +427,6 @@ transform: scale(1.25);
 }
 .lightbox:target ~ #lightbox-controls #close-lightbox:before {
   height:50px;
-}
-@media only screen and (max-width: 640px) {
-  .iframe-container  {
-    width: 65% !important;
-}
-  iframe  {
-    height: 75vh !important;
-}
-  .bloc-gauche {
-    width: 100%;
-}
 }
 .iframe-container {
   height: 400px;
