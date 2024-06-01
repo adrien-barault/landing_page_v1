@@ -160,7 +160,7 @@ main {
   position: relative;
   vertical-align: middle;
   margin-top: 2.188rem;
-  margin-right: 1.5rem !important;
+  margin-right: 1.5rem;
   float: right;
   transition: all 0.2s ease;
   color: #cc9966;
@@ -174,11 +174,23 @@ main {
   color: #cc9966;
 }
 .fa-instagram:hover,.fa-whatsapp:hover {
+  transition: all 0.2s ease;
   -ms-transform: scale(1.25); /* IE 9 */
 -webkit-transform: scale(1.25); /* Safari 3-8 */
 transform: scale(1.25);
-} 
-
+}
+.fa-instagram:hover {
+  transition: all 0.2s ease;
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fa-whatsapp:hover {
+  transition: all 0.2s ease;
+  color: #25D366;
+}
 .swiper {
   width: 100%;
   padding-top: 2rem;
