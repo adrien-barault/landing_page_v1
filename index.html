@@ -400,8 +400,11 @@ transform: scale(1.25);
   height:50px;
 }
 @media only screen and (max-width: 640px) {
-  iframe {
-    width: 75vw !important;
+  .iframe-container  {
+    width: 75vw;
+    height: 75vh;
+}
+  iframe  {
     height: 75vh !important;
 }
   .bloc-gauche {
@@ -415,6 +418,7 @@ transform: scale(1.25);
   text-align: center;
   border-color: red;
   margin: 0 auto;
+  scrollbar-width: thin;
 }
 iframe {
   width: 100% !important;
@@ -423,6 +427,10 @@ iframe {
   position: relative;
   display: inline-block;
   top: -20px;
+  scrollbar-width: thin;
+}
+.supernova {
+  scrollbar-width: thin;
 }
 /* fin gestion lightbox */
 </style>
