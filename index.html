@@ -12,8 +12,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://use.fontawesome.com/175d77714f.js"></script>
 <img class="logo" src="https://lh3.googleusercontent.com/d/15RITpLl2aSiUZXDl6mz4vKOAtCBzszji"/>
-<a href="url" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-<a href="url" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
 <main>
   <div class="bloc-gauche">
     <div class="separateur"></div>
@@ -24,7 +22,11 @@
     <h2 class="sous-titre">by Geoffrey Barault</h2>
    </div>
     <p class="details">Exciting news for all pastry enthusiasts ! Malta Pastry Class will soon be launching, bringing you a baking & pastry courses designed for all skill levels. Whether you're a beginner eager to learn or an experienced baker looking to refine your techniques Want to be the first to know when we launch ? Fill out the form below to stay informed and receive exclusive updates and offers.</p>
-    <a class="bouton" href="#image1">notify me</a>
+    <div class="barre-lien">
+      <a class="bouton" href="#image1">notify me</a>
+      <a href="url" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="url" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
+    </div>
     <!-- début gestion lightbox -->
   <div class="lightbox short-animate" id="image1">
     <span class="long-animate">
@@ -120,7 +122,7 @@ main {
   font-weight: 400;
   font-style: normal;
   text-rendering: optimizeLegibility;
-  font-size: 3rem;
+  font-size: 3.1rem;
   display: inline-block.;
 }
 .sous-titre {
@@ -152,9 +154,12 @@ main {
   text-align: justify;
   color: rgba(0,0,0,0.75)
 }
-
+.barre-lien {
+    
+  }
 .bouton {
   display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   text-transform: uppercase;
   color: #cc9966;
@@ -172,6 +177,25 @@ main {
   background-color: #cc9966;;
   color: white;
 }
+.fa-instagram {
+  vertical-align: middle;
+  margin-top: 2.188rem;
+  margin-left: 3rem;
+  transition: all 0.2s ease;
+  color: #cc9966;
+}
+.fa-whatsapp {
+  vertical-align: middle;
+  margin-top: 2.188rem;
+  margin-left: 1rem;
+  transition: all 0.2s ease;
+  color: #cc9966;
+}
+.fa-instagram:hover,.fa-whatsapp:hover {
+  -ms-transform: scale(1.25); /* IE 9 */
+-webkit-transform: scale(1.25); /* Safari 3-8 */
+transform: scale(1.25);
+} 
 
 .swiper {
   width: 100%;
@@ -386,6 +410,9 @@ main {
     width: 75vw;
     height: 75vh;
 }
+  .bloc-gauche {
+  width: 100%;
+}
 }
 .iframe-container {
   height: 400px;
@@ -404,25 +431,6 @@ main {
   top: -20px;
 }
 /* fin gestion lightbox */
-.fa-instagram {
-  position: fixed;
-  right: 50px;
-  top: 50px;
-  transition: all 0.2s ease;
-  color: #cc9966;
-}
-.fa-whatsapp {
-  position: fixed;
-  right: 50px;
-  top: 110px;
-  transition: all 0.2s ease;
-  color: #cc9966;
-}
-.fa-instagram:hover,.fa-whatsapp:hover {
-  -ms-transform: scale(1.25); /* IE 9 */
--webkit-transform: scale(1.25); /* Safari 3-8 */
-transform: scale(1.25);
-}
 </style>
 <script>
 /*
