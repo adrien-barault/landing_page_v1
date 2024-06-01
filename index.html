@@ -10,14 +10,20 @@
   </head>
   <body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://use.fontawesome.com/175d77714f.js"></script>
 <img class="logo" src="https://lh3.googleusercontent.com/d/15RITpLl2aSiUZXDl6mz4vKOAtCBzszji"/>
+<a href="url" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+<a href="url" target="_blank"><i class="fab fa-whatsapp fa-3x"></i></a>
 <main>
   <div class="bloc-gauche">
     <div class="separateur"></div>
     <span class="sur-titre">coming soon</span>
-    <h1 class="titre">malta pastry class</h1>
     <hr class="barre">
-    <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae lacus gravida nisl venenatis sodales. Proin convallis, tortor ac molestie lacinia, enim lectus vehicula lectus, mattis tristique lorem velit ut ipsum. Ut eget aliquet mi, non scelerisque est. Morbi eget nisi est. Sed eu cursus augue, ac scelerisque est.</p>
+   <div class="bloc-titre">
+    <h1 class="titre">malta pastry class</h1>
+    <h2 class="sous-titre">by Geoffrey Barault</h2>
+   </div>
+    <p class="details">Exciting news for all pastry enthusiasts ! Malta Pastry Class will soon be launching, bringing you a baking & pastry courses designed for all skill levels. Whether you're a beginner eager to learn or an experienced baker looking to refine your techniques Want to be the first to know when we launch ? Fill out the form below to stay informed and receive exclusive updates and offers.</p>
     <a class="bouton" href="#image1">notify me</a>
     <!-- début gestion lightbox -->
   <div class="lightbox short-animate" id="image1">
@@ -31,20 +37,18 @@
   <div id="lightbox-controls" class="short-animate">
     <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
   </div>
-<script src="https://use.fontawesome.com/175d77714f.js"></script>
 <!-- fin gestion lightbox -->
-  <a href="https://www.instagram.com/geoffreybarault" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
   </div>
   <div class="swiper">
     <div class="swiper-wrapper">
       <div id="swiper-slide--one" class="swiper-slide swiper-slide--one">
         <div>
-          <h2>Course</h2>
+          <h2>Tasting</h2>
         </div>
       </div>
       <div id="swiper-slide--two" class="swiper-slide swiper-slide--two">
         <div class="description">
-          <h2>Tasting</h2>
+          <h2>Course</h2>
         </div>
       </div>
       <div id="swiper-slide--three" class="swiper-slide swiper-slide--three">
@@ -80,9 +84,9 @@
   font-family: "Open Sans", sans-serif;
 }
 .logo {
-  opacity: 0.15;
+  opacity: 0.21;
   position: fixed;
-  width: 45rem;
+  width: 40rem;
   top: -6rem;
   left: -6rem;
 }
@@ -109,48 +113,63 @@ main {
 }
 
 .titre {
-  text-transform: capitalize;
-  letter-spacing: 0.8px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
-  background: linear-gradient(45deg, #cc9966, #663300);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  color: #cc9966;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 3.1rem;
+  display: inline-block.;
+}
+.sous-titre {
+  font-family: "Montserrat", sans-serif;
+  color: #cc9966;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.bloc-titre {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .barre {
   display: block;
-  background: #cc9966;
-  height: 0.25rem;
-  width: 6.25rem;
+  background: #717171;
+  height: 0.1rem;
+  width: 8.1rem;
   border: none;
-  margin: 1.125rem 0 1.875rem 0;
+  margin-bottom: 1rem;
 }
 
 .details {
   line-height: 1.6;
+  text-align: justify;
+  color: rgba(0,0,0,0.75)
 }
 
 .bouton {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #717171;
+  color: #cc9966;
   font-weight: 500;
   background: #fff;
   border-radius: 3.125rem;
   transition: 0.3s ease-in-out;
-  border: 2px solid #c2c2c2;
+  border: 2px solid #cc9966;
   margin-top: 2.188rem;
   padding: 0.625rem 1.875rem;
 }
 .bouton:hover {
   border-width: 0.125rem;
   border-color: #cc9966;
-  color: #cc9966;
+  background-color: #cc9966;;
+  color: white;
 }
 
 .swiper {
@@ -202,25 +221,25 @@ main {
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://plus.unsplash.com/premium_photo-1661719297145-bcd537d3d81f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    url("https://lh3.googleusercontent.com/d/1AecVR6lbE2g0fyhTkL4LOzHFgSSLQGDI")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://images.unsplash.com/photo-1620980776848-84ac10194945?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    url("https://lh3.googleusercontent.com/d/1HiVlGhw9ut-7iQKh7Dkal6seWUY157DS")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://plus.unsplash.com/premium_photo-1671196990669-1bab593b3443?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    url("https://lh3.googleusercontent.com/d/1fOc-Ebf445ha3-dAqzTtcqPxKz596NnP")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://offloadmedia.feverup.com/parissecret.com/wp-content/uploads/2019/11/23142145/74682771_2479277612110139_2542389368128012288_o.jpg")
+    url("https://lh3.googleusercontent.com/d/1smOlIvfeXPtafvZnHP8GFR1ugiCTN3Ds")
       no-repeat 50% 50% / cover;
 }
 
@@ -391,11 +410,18 @@ main {
   transition: all 0.2s ease;
   color: #cc9966;
 }
-.fa-instagram:hover {
+.fa-whatsapp {
+  position: fixed;
+  right: 50px;
+  top: 110px;
+  transition: all 0.2s ease;
+  color: #cc9966;
+}
+.fa-instagram:hover,.fa-whatsapp:hover {
   -ms-transform: scale(1.25); /* IE 9 */
 -webkit-transform: scale(1.25); /* Safari 3-8 */
 transform: scale(1.25);
-}  
+}
 </style>
 <script>
 /*
