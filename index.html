@@ -47,12 +47,12 @@
     <div class="swiper-wrapper">
       <div id="swiper-slide--one" class="swiper-slide swiper-slide--one">
         <div>
-          <h2>Tasting</h2>
+          <h2>Course</h2>
         </div>
       </div>
       <div id="swiper-slide--two" class="swiper-slide swiper-slide--two">
         <div class="description">
-          <h2>Course</h2>
+          <h2>Event</h2>
         </div>
       </div>
       <div id="swiper-slide--three" class="swiper-slide swiper-slide--three">
@@ -62,7 +62,7 @@
       </div>
             <div id="swiper-slide--three" class="swiper-slide swiper-slide--four">
         <div>
-          <h2>Event</h2>
+          <h2>Tasting</h2>
         </div>
       </div>
     </div>
@@ -272,13 +272,13 @@ transform: scale(1.25);
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://lh3.googleusercontent.com/d/1AecVR6lbE2g0fyhTkL4LOzHFgSSLQGDI")
+    url("https://lh3.googleusercontent.com/d/1HiVlGhw9ut-7iQKh7Dkal6seWUY157DS")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://lh3.googleusercontent.com/d/1HiVlGhw9ut-7iQKh7Dkal6seWUY157DS")
+    url("https://lh3.googleusercontent.com/d/1smOlIvfeXPtafvZnHP8GFR1ugiCTN3Ds")
       no-repeat 50% 50% / cover;
 }
 
@@ -290,7 +290,7 @@ transform: scale(1.25);
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("https://lh3.googleusercontent.com/d/1smOlIvfeXPtafvZnHP8GFR1ugiCTN3Ds")
+    url("https://lh3.googleusercontent.com/d/1AecVR6lbE2g0fyhTkL4LOzHFgSSLQGDI")
       no-repeat 50% 50% / cover;
 }
 
@@ -454,15 +454,9 @@ iframe {
 /* fin gestion lightbox */ 
 </style>
 <script>
-/*
-inspiration
-https://dribbble.com/shots/4684682-Aquatic-Animals
-*/
-
 var swiper = new Swiper(".swiper", {
   effect: "coverflow",
   grabCursor: true,
-
   centeredSlides: true,
   coverflowEffect: {
     rotate: 0,
@@ -477,12 +471,10 @@ var swiper = new Swiper(".swiper", {
   mousewheel: {
     thresholdDelta: 70
   },
-
   pagination: {
     el: ".swiper-pagination",
     clickable: true
   },
-    // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -492,16 +484,21 @@ var swiper = new Swiper(".swiper", {
       slidesPerView: 2
     },
     768: {
-      slidesPerView: 1
+      slidesPerView: 2
     },
     1024: {
       slidesPerView: 2
     }
-  }
+  },
+  autoplay: {
+    delay: 3000, // Temps en millisecondes entre les changements de diapositive
+    disableOnInteraction: false, // Les diapositives continuent à se déplacer après interaction
+  },
+  loop: true, // Active le loop pour permettre une navigation fluide
 });
 
 // Définition de la diapositive initiale à la deuxième image (index 1)
-swiper.slideTo(1);
+swiper.slideTo(2);
 </script>
 </body>
 </html>
